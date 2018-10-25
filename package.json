@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/m-esm/serendip-utility.git"
+    "url": "git+https://github.com/m-esm/serendip-model.git"
   },
   "author": "Mohsen Esmaeili <m-esm@hotmail.com>",
   "license": "ISC",

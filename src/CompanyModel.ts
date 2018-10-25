@@ -16,6 +16,29 @@ export class CompanyModel implements CrmModelInterface {
             this.type = model.type;
 
             this.oid = model.oid;
+
+        } else {
+
+            this._id = '';
+            this.name = '';
+            this.type = [''];
+            this.contacts = [
+                {
+                    name: "",
+                    faxes: [''],
+                    telephones: [''],
+                    peoples: [],
+                    address: {
+                        text: '',
+                        city: '',
+                        state: '',
+                        country: '',
+                        postalCode: '',
+                        geo: ''
+                    }
+                }
+            ];
+
         }
     }
 
@@ -37,6 +60,7 @@ export class CompanyModel implements CrmModelInterface {
     _id?: string;
 
     crm: string;
+
 
     name: string;
 

@@ -47,6 +47,27 @@ var CompanyModel = /** @class */ (function () {
             this.type = model.type;
             this.oid = model.oid;
         }
+        else {
+            this._id = '';
+            this.name = '';
+            this.type = [''];
+            this.contacts = [
+                {
+                    name: "",
+                    faxes: [''],
+                    telephones: [''],
+                    peoples: [],
+                    address: {
+                        text: '',
+                        city: '',
+                        state: '',
+                        country: '',
+                        postalCode: '',
+                        geo: ''
+                    }
+                }
+            ];
+        }
     }
     CompanyModel.validate = function (model) {
         return __awaiter(this, void 0, void 0, function () {

@@ -13,6 +13,13 @@ export class ComplaintModel implements CrmModelInterface {
             this.crm = model.crm;
             this.product = model.product;
             this.service = model.service;
+            this.person = model.person;
+            this.product = model.product;
+            this.receivedAt = model.receivedAt;
+            this.receiver = model.receiver;
+            this.company = model.company;
+        } else {
+            this.receivedAt = new Date();
         }
     }
 

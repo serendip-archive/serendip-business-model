@@ -8,6 +8,7 @@ var ContactAddressModel = /** @class */ (function () {
             this.country = model.country;
             this.postalCode = model.postalCode;
             this.text = model.text;
+            this.geo = model.geo;
         }
     }
     return ContactAddressModel;

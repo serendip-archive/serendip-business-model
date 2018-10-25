@@ -15,6 +15,6 @@ export interface CrmModelInterface {
   /**
    * model validation
    */
-  validate?(model: any): Promise<ValidationErrorInterface[]>;
+   validate?(model: any): Promise<ValidationErrorInterface[]>;
 
 }

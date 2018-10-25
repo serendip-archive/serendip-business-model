@@ -43,6 +43,14 @@ var ComplaintModel = /** @class */ (function () {
             this.crm = model.crm;
             this.product = model.product;
             this.service = model.service;
+            this.person = model.person;
+            this.product = model.product;
+            this.receivedAt = model.receivedAt;
+            this.receiver = model.receiver;
+            this.company = model.company;
+        }
+        else {
+            this.receivedAt = new Date();
         }
     }
     ComplaintModel.validate = function (model) {
