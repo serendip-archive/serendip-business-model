@@ -1,11 +1,12 @@
 {
-  "name": "serendip-crm-model",
+  "name": "serendip-business-model",
   "version": "1.0.0",
-  "description": "entity models of serendip crm",
+  "description": "entity models of serendip business",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
+
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -19,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/m-esm/serendip-model.git"
+    "url": "git+https://github.com/m-esm/serendip-business-model.git"
   },
   "author": "Mohsen Esmaeili <m-esm@hotmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/m-esm/serendip-utility/issues"
+    "url": "https://github.com/m-esm/serendip-business-model/issues"
   },
-  "homepage": "https://github.com/m-esm/serendip-utility#readme"
+  "homepage": "https://github.com/m-esm/serendip-business-model#readme"
 }

@@ -1,7 +1,5 @@
+import { ValidationErrorInterface } from "./ValidationErrorInterface";
 
-import { ContactModel } from ".";
-import { ValidationErrorInterface } from ".";
-import { validate } from 'serendip-utility'
 
 
 export class UserProfileModel {
