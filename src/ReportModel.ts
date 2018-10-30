@@ -1,8 +1,13 @@
+import { ReportFieldInterface } from "./ReportFieldInterface";
+import { ReportQueryInterface } from "./ReportQueryInterface";
+
 export class ReportModel {
 
         _id?: string;
 
-        fields: { name: string, template: string, method?: string, methodInputs: any }[];
+        fields: ReportFieldInterface[];
+
+        queries: ReportQueryInterface[];
 
         entity: string;
 
@@ -11,6 +16,7 @@ export class ReportModel {
         createDate: Date;
 
         user?: string;
+        
         client?: string;
 
 }

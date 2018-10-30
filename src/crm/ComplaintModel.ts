@@ -1,5 +1,5 @@
 import { ServiceModel, ProductModel } from ".";
-import { ValidationErrorInterface } from ".";
+import { ValidationErrorInterface } from "..";
 import { validate } from 'serendip-utility'
 import { EntityModel } from "../EntityModel";
 

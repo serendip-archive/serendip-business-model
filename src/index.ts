@@ -17,3 +17,4 @@ export * from './ValidationErrorInterface';
 
 export * from './ValueTypeInterface';
 
+export * from './crm'

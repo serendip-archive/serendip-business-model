@@ -1,7 +1,7 @@
 import { SaleModel } from "./SaleModel";
 import { ServiceModel, ComplaintModel } from ".";
 import { PeopleModel } from "./PeopleModel";
-import { ValidationErrorInterface } from ".";
+import { ValidationErrorInterface } from "..";
 import { EntityModel } from "../EntityModel";
 
 export class InteractionModel extends EntityModel {

@@ -1,4 +1,4 @@
-import { ValidationErrorInterface } from '.';
+import { ValidationErrorInterface } from '..';
 import { EntityModel } from '../EntityModel';
 
 export class ServiceTypeModel extends EntityModel {

@@ -1,4 +1,4 @@
-import { ValidationErrorInterface } from ".";
+import { ValidationErrorInterface } from "..";
 import { ContactModel } from "./ContactModel";
 import { ValueTypeInterface } from "../ValueTypeInterface";
 import { EntityModel } from "../EntityModel";

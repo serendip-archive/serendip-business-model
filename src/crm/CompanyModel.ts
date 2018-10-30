@@ -1,5 +1,5 @@
 import { ContactModel } from ".";
-import { ValidationErrorInterface } from ".";
+import { ValidationErrorInterface } from "..";
 import { validate } from 'serendip-utility'
 import { EntityModel } from "../EntityModel";
 
@@ -9,18 +9,17 @@ export class CompanyModel extends EntityModel {
 
         super(model);
 
+        this._entity = 'company';
+
         if (model) {
-          
 
             this.contacts = model.contacts;
             this.name = model.name;
             this.type = model.type;
-
             this.oid = model.oid;
 
         } else {
 
-            this._id = '';
             this.name = '';
             this.type = [''];
             this.contacts = [

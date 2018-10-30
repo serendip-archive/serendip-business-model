@@ -8,3 +8,4 @@ __export(require("./BusinessModel"));
 __export(require("./EntityModel"));
 __export(require("./ReportModel"));
 __export(require("./UserProfileModel"));
+__export(require("./crm"));

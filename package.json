@@ -1,13 +1,14 @@
 {
   "name": "serendip-business-model",
-  "version": "1.0.0",
-  "description": "entity models of serendip business",
+  "version": "1.0.1",
+  "description": "model definitions of serendip business",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
-
-  "dependencies": {},
+  "dependencies": {
+    "serendip-utility": "^1.0.0"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean": "^0.4.0",

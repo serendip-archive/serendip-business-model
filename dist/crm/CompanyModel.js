@@ -51,6 +51,7 @@ var CompanyModel = /** @class */ (function (_super) {
     __extends(CompanyModel, _super);
     function CompanyModel(model) {
         var _this = _super.call(this, model) || this;
+        _this._entity = 'company';
         if (model) {
             _this.contacts = model.contacts;
             _this.name = model.name;
@@ -58,7 +59,6 @@ var CompanyModel = /** @class */ (function (_super) {
             _this.oid = model.oid;
         }
         else {
-            _this._id = '';
             _this.name = '';
             _this.type = [''];
             _this.contacts = [
