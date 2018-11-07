@@ -1,6 +1,6 @@
 {
   "name": "serendip-business-model",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "model definitions of serendip business",
   "main": "index.js",
   "directories": {

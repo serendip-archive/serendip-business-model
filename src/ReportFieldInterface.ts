@@ -2,6 +2,7 @@
 export interface ReportFieldInterface {
     name: string;
     template?: string;
-    method: string;
+    templateInputs? : any;
+    method?: string;
     methodInputs?: any
 }
