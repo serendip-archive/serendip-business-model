@@ -1,8 +1,14 @@
+import { ReportFieldQueryInterface } from ".";
 
 export interface ReportFieldInterface {
-    name: string;
-    template?: string;
-    templateInputs? : any;
-    method?: string;
-    methodInputs?: any
+  enabled?: boolean;
+  name?: string;
+  method?: string;
+  methodInputs?: any;
+  label?: string;
+  template?: string;
+  templateInputs?: any;
+  templateInputsForm?: string;
+
+  queries?: ReportFieldQueryInterface[];
 }

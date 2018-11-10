@@ -1,39 +1,43 @@
 import { ReportFieldInterface } from "./ReportFieldInterface";
-import { ReportQueryInterface } from "./ReportQueryInterface";
+import { ReportFieldQueryInterface } from "./ReportFieldQueryInterface";
 
-export class ReportModel {
+export interface ReportInterface {
+  _id?: string;
+  name?: string;
+  label?: string;
+  entityName?: string;
+  fields?: ReportFieldInterface[];
+}
+export class ReportModel implements ReportInterface {
+  constructor(model: ReportModel) {
+    this.fields = model.fields;
+    this._business = model._business;
+    this.entityName = model.entityName;
+    this.createDate = model.createDate || new Date();
+    this.data = model.data || [];
+    this.user = model.user;
+    this.client = model.client;
+    this.count = model.count;
+    this.name = model.name;
+    this.label = model.label;
+  }
+  _business: string;
+  label: string;
+  offline?: boolean;
+  _id?: string;
 
-        constructor(model: ReportModel) {
+  count: number;
 
-                this.fields = model.fields;
-                this.queries = model.queries;
-                this.entity = model.entity;
-                this.createDate = model.createDate || new Date();
-                this.data = model.data || [];
-                this.user = model.user;
-                this.client = model.client;
-                this.count = model.count;
-                this.name = model.name;
-        }
+  name: string;
+  entityName: string;
 
-        _id?: string;
+  fields: ReportFieldInterface[];
 
-        count: number;
+  data: any[];
 
-        name: string;
+  createDate: Date;
 
-        fields: ReportFieldInterface[];
+  user?: string;
 
-        queries: ReportQueryInterface[];
-
-        entity: string;
-
-        data: any[];
-
-        createDate: Date;
-
-        user?: string;
-
-        client?: string;
-
+  client?: string;
 }
