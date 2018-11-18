@@ -1,29 +1,27 @@
 import { BusinessMemberModel } from ".";
 
-
 export class BusinessModel {
+  _id?: string;
+  title: string;
+  owner: string;
+  subDomain: string;
+  domain: string;
+  members: BusinessMemberModel[];
 
-    _id?: string;
-    title: string;
-    owner: string;
-    subDomain: string;
-    domain: string;
-    members: BusinessMemberModel[];
+  // user's groups name
+  groups: string[];
 
-    description: string;
-    logo: string;
+  description: string;
+  logo: string;
 
+  clients: string[];
+  crmailDomains: string[];
 
-    static async validate(model: BusinessModel) {
+  static async validate(model: BusinessModel) {
+    if (!model) throw new Error("model empty");
 
-        if (!model)
-            throw new Error('model empty');
+    if (!model.title) throw new Error("model.title required");
 
-        if (!model.title)
-            throw new Error('model.title required');
-
-        if (!model.owner)
-            throw new Error('model.owner required');
-
-    }
+    if (!model.owner) throw new Error("model.owner required");
+  }
 }
