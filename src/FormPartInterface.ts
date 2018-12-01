@@ -1,7 +1,12 @@
+import { FieldQueryInterface } from "./FieldQueryInterface";
+
 export interface FormPartInterface {
-    componentName: string;
-    propertyName: string;
-    propertyType?: "string" | "boolean" | "number" | "array";
-    inputs?: any;
-  }
-  
+  if?: FieldQueryInterface;
+  componentName?: string;
+  propertyName?: string;
+  propertyType?: "array" | "object" | "string" | "boolean" | "number";
+  inputs?: any;
+
+  cssClass?: string;
+  parts?: FormPartInterface[];
+}

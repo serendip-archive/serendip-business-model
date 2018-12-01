@@ -8,7 +8,7 @@ export * from "./EntityModel";
 
 export * from "./ReportFieldInterface";
 export * from "./ReportModel";
-export * from "./ReportFieldQueryInterface";
+export * from "./FieldQueryInterface";
 
 export * from "./UserProfileModel";
 
@@ -27,7 +27,7 @@ export * from "./TriggerModel";
 export * from "./FormInterface";
 export * from "./FormPartInterface";
 export * from "./ReportFieldInterface";
-export * from "./ReportFieldQueryInterface";
+export * from "./FieldQueryInterface";
 
 export * from "./DashboardContainerInterface";
 export * from "./DashboardGridInterface";

@@ -1,4 +1,4 @@
-import { ReportFieldQueryInterface } from ".";
+import { FieldQueryInterface } from ".";
 
 export interface ReportFieldInterface {
   // report should include this field?
@@ -16,5 +16,5 @@ export interface ReportFieldInterface {
   templateInputs?: any;
   templateInputsForm?: string;
 
-  queries?: ReportFieldQueryInterface[];
+  queries?: FieldQueryInterface[];
 }

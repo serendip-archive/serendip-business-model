@@ -1,5 +1,4 @@
 import { ReportFieldInterface } from "./ReportFieldInterface";
-import { ReportFieldQueryInterface } from "./ReportFieldQueryInterface";
 
 export interface ReportInterface {
   _id?: string;
@@ -21,7 +20,7 @@ export class ReportModel implements ReportInterface {
     this.name = model.name;
     this.label = model.label;
   }
-  _business: string;
+  _business?: string;
   label: string;
   offline?: boolean;
   _id?: string;

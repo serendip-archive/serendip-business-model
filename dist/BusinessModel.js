@@ -42,11 +42,11 @@ var BusinessModel = /** @class */ (function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 if (!model)
-                    throw new Error('model empty');
+                    throw new Error("model empty");
                 if (!model.title)
-                    throw new Error('model.title required');
+                    throw new Error("model.title required");
                 if (!model.owner)
-                    throw new Error('model.owner required');
+                    throw new Error("model.owner required");
                 return [2 /*return*/];
             });
         });

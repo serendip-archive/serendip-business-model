@@ -7,6 +7,7 @@ export class TriggerModel {
     active: boolean;
 
     on: 'create' | 'update' | 'delete';
+    
     // label for this trigger
     label: string;
 

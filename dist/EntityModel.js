@@ -43,15 +43,17 @@ var EntityModel = /** @class */ (function () {
         this._rdate = model._rdate;
         this._udate = model._udate;
         this._vdate = model._vdate;
-        this._entity = model._entity;
         this._cdate = model._cdate || Date.now();
+        this._ruser = model._ruser;
+        this._uuser = model._uuser;
+        this._vuser = model._vuser;
+        this._cuser = model._cuser;
+        this._entity = model._entity;
     }
     EntityModel.validate = function (model) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                return [2 /*return*/];
-            });
-        });
+        return __awaiter(this, void 0, void 0, function () { return __generator(this, function (_a) {
+            return [2 /*return*/];
+        }); });
     };
     return EntityModel;
 }());
