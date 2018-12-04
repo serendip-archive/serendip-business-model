@@ -8,6 +8,7 @@ export class BusinessModel {
   domain: string;
   members: BusinessMemberModel[];
 
+  mails : string[];
   // user's groups name
   groups: string[];
 

@@ -10,5 +10,5 @@ export class BusinessMemberModel {
   }[];
 
   // user's email for mail.serendip.cloud
-  crmails: string[];
+  mails: string[];
 }

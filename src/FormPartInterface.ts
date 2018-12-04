@@ -1,7 +1,7 @@
 import { FieldQueryInterface } from "./FieldQueryInterface";
 
 export interface FormPartInterface {
-  if?: FieldQueryInterface;
+  if?: string;
   componentName?: string;
   propertyName?: string;
   propertyType?: "array" | "object" | "string" | "boolean" | "number";
