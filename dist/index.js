@@ -8,7 +8,6 @@ __export(require("./BusinessModel"));
 __export(require("./EntityModel"));
 __export(require("./ReportModel"));
 __export(require("./UserProfileModel"));
-__export(require("./crm"));
 __export(require("./NotificationModel"));
 __export(require("./TaskModel"));
 __export(require("./TriggerActionModel"));

@@ -16,8 +16,6 @@ export * from "./ValidationErrorInterface";
 
 export * from "./ValueTypeInterface";
 
-export * from "./crm";
-
 export * from "./NotificationModel";
 
 export * from "./TaskModel";
