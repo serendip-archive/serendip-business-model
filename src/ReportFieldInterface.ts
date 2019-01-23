@@ -12,9 +12,12 @@ export interface ReportFieldInterface {
   //! this property will be provided by tech user
   methodOptions?: any;
   label?: string;
-  template?: string;
-  templateInputs?: any;
-  templateInputsForm?: string;
+  template?: {
+    component: string;
+    inputs?: any;
+    formName?: string;
+    formId?: string;
+  };
 
   queries?: FieldQueryInterface[];
 }

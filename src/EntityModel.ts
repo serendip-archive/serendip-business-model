@@ -1,5 +1,6 @@
 export class EntityModel {
   // related _id  in businesses collection
+  [key: string]: any;
   _business?: string;
   _id?: string;
 
