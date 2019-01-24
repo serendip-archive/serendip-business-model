@@ -36,14 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var UserProfileModel = /** @class */ (function () {
-    function UserProfileModel(model) {
-        if (model) {
-            if (model._id)
-                this._id = model._id;
-            this.firstName = model.firstName;
-            this.lastName = model.lastName;
-            this.oid = model.oid;
-        }
+    function UserProfileModel() {
     }
     UserProfileModel.validate = function (model) {
         return __awaiter(this, void 0, void 0, function () {

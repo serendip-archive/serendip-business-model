@@ -1,37 +1,19 @@
 import { ValidationErrorInterface } from "./ValidationErrorInterface";
 
-
-
 export class UserProfileModel {
+  static async validate(model: UserProfileModel): Promise<void> {
+    var errs: ValidationErrorInterface[] = [];
 
-    constructor(model?: UserProfileModel) {
+    if (errs && errs.length > 0) throw errs;
+  }
 
-        if (model) {
-            if (model._id)
-                this._id = model._id;
+  oid?: string;
 
-            this.firstName = model.firstName;
-            this.lastName = model.lastName;
+  _id?: string;
 
-            this.oid = model.oid;
-        }
-    }
+  firstName: string;
+  lastName: string;
+  profilePicture: string;
 
-
-    static async validate(model: UserProfileModel): Promise<void> {
-        var errs: ValidationErrorInterface[] = [];
-
-        if (errs && errs.length > 0)
-            throw errs;
-
-    }
-
-    oid?: string;
-
-    _id?: string;
-
-    firstName: string;
-    lastName: string;
-    profilePicture: string;
-
+  gender: string;
 }

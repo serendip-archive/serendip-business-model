@@ -2,3 +2,4 @@ node_modules
 .sonarlint
 .vscode
 .nyc_output
+npm-*.log
