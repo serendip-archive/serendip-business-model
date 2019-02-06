@@ -11,6 +11,7 @@ export interface ReportFieldInterface {
   method?: string;
   //! this property will be provided by tech user
   methodOptions?: any;
+  
   label?: string;
   template?: {
     component: string;

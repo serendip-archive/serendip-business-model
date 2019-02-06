@@ -1,5 +1,7 @@
 export interface FieldQueryInterface {
   enabled?: boolean;
+
+ 
   method: string | "eq" | "neq" | "lt" | "lte" | "gt" | "gte" | "in" | "nin";
 
   methodOptions?: any;

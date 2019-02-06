@@ -7,7 +7,7 @@ export * from "./BusinessModelInterface";
 export * from "./EntityModel";
 
 export * from "./ReportFieldInterface";
-export * from "./ReportModel";
+export * from "./ReportInterface";
 export * from "./FieldQueryInterface";
 
 export * from "./UserProfileModel";
