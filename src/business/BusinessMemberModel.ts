@@ -1,3 +1,5 @@
+import { ProfileModel } from "../profile";
+
 export class BusinessMemberModel {
   userId: string;
 
@@ -11,4 +13,8 @@ export class BusinessMemberModel {
 
   // user's email for mail.serendip.cloud
   mails: string[];
+  mobileCountryCode?: string;
+  mobile?: string;
+
+  profile?: ProfileModel;
 }

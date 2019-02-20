@@ -9,10 +9,10 @@ export class EntityModel {
   _udate?: number;
   _rdate?: number;
 
-  _vuser?: number;
-  _cuser?: number;
-  _uuser?: number;
-  _ruser?: number;
+  _vuser?: string;
+  _cuser?: string;
+  _uuser?: string;
+  _ruser?: string;
   _entity?: string;
 
   constructor(model: EntityModel) {
