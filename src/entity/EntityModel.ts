@@ -4,6 +4,10 @@ export class EntityModel {
   _business?: string;
   _id?: string;
 
+  _hex?: string;
+  _aes?: string;
+
+  _access?: string;
   _vdate?: number;
   _cdate?: number;
   _udate?: number;

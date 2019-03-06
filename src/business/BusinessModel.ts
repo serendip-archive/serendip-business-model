@@ -18,6 +18,8 @@ export class BusinessModel {
   clients: string[];
   crmailDomains: string[];
 
+  publicKey?: string;
+
   static async validate(model: BusinessModel) {
     if (!model) throw new Error("model empty");
 
