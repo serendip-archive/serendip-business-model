@@ -8,6 +8,10 @@ export interface DbProviderInterface {
     trackChanges?: boolean
   ): Promise<DbCollectionInterface<T>>;
   changes: DbCollectionInterface<EntityChangeModel>;
+
+  collectionEvents: {
+    [key: string]: any;
+  };
   /**
    * options for this provider
    */
