@@ -9,11 +9,15 @@ export interface DbProviderInterface {
   ): Promise<DbCollectionInterface<T>>;
   changes: DbCollectionInterface<EntityChangeModel>;
 
-  collectionEvents: {
+  events: {
     [key: string]: any;
   };
   /**
    * options for this provider
    */
   initiate(options?): Promise<void>;
+
+  dropDatabase(): Promise<void>;
+
+  dropCollection(name: string): Promise<boolean>;
 }

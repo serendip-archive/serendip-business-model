@@ -7,6 +7,9 @@ export interface DbCollectionInterface<T> {
   ensureIndex(fieldOrSpec: any, options: any): Promise<void>;
   find(query?, skip?: any, limit?: any): Promise<T[]>;
   count(query?): Promise<Number>;
+
+
+
   updateOne(
     model: T,
     userId?: string,
