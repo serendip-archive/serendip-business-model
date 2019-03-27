@@ -1,6 +1,5 @@
 export interface FieldQueryInterface {
   enabled?: boolean;
-
  
   method: string | "eq" | "neq" | "lt" | "lte" | "gt" | "gte" | "in" | "nin";
 
@@ -10,4 +9,5 @@ export interface FieldQueryInterface {
   methodInputForm?: string;
 
   label: string;
+
 }
