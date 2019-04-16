@@ -16,8 +16,19 @@ export interface DbProviderInterface {
    * options for this provider
    */
   initiate(options?): Promise<void>;
-
+  collections(): Promise<string[]>;
   dropDatabase(): Promise<void>;
 
   dropCollection(name: string): Promise<boolean>;
+
+  stats(): Promise<{
+    db: string;
+    collections: number;
+    indexes: number;
+    avgObjSizeByte: number;
+    objects: number;
+    storageMB: number;
+    fsUsedMB: number;
+    fsTotalMB: number;
+  }>;
 }

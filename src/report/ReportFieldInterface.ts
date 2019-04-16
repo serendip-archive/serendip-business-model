@@ -13,7 +13,7 @@ export interface ReportFieldInterface {
   //! this property will be provided by tech user
   methodOptions?: any;
 
-  indexing? : boolean;
+  indexing?: boolean;
   label?: string;
   link?: string;
   template?: {
@@ -23,7 +23,7 @@ export interface ReportFieldInterface {
     formId?: string;
   };
 
-  type?: "date" | "string" | "number" | string;
+  type?: "date" | "string" | "number" | "array";
 
   queries?: FieldQueryInterface[];
 }
