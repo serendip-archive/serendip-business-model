@@ -23,6 +23,5 @@ export class TokenModel {
 
   username?: string;
 
-  hasPassword? :boolean;
   groups?: string[];
 }
