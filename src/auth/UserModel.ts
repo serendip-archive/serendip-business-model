@@ -31,8 +31,7 @@ export class UserModel {
   public passwordResetTokenIssueAt?: number;
   public passwordResetTokenExpireAt?: number;
 
-  public twoFactorEnabled?: number;
+  public twoFactorEnabled?: boolean;
   public groups?: string[];
-
   public extra?: any;
 }

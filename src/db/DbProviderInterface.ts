@@ -31,4 +31,8 @@ export interface DbProviderInterface {
     fsUsedMB: number;
     fsTotalMB: number;
   }>;
+
+  openUploadStreamByFilePath?(filePath: string, metadata: any): Promise<any>
+
+  openDownloadStreamByFilePath?(filePath: string, opts?: { start?: number, end?: number, revision?: number }): Promise<any>
 }
