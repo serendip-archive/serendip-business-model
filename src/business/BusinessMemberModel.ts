@@ -1,3 +1,8 @@
+/**
+ * @module Business
+ */
+
+
 import { ProfileModel } from "../profile";
 
 export class BusinessMemberModel {

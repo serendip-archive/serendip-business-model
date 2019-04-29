@@ -1,4 +1,8 @@
-export interface DbCollectionInterface<T> {
+/**
+ * @module Db
+ */
+
+ export interface DbCollectionInterface<T> {
   /**
    *
    * @param fieldOrSpec

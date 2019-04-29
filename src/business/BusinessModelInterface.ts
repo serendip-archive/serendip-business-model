@@ -1,4 +1,8 @@
-import { ValidationErrorInterface } from "..";
+/**
+ * @module Business
+ */
+
+ import { ValidationErrorInterface } from "..";
 
 export interface BusinessModelInterface {
   _id?: string;

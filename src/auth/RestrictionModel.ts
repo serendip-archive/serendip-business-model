@@ -1,3 +1,7 @@
+/**
+ * @module Auth
+ */
+
 export class RestrictionModel {
 
     controllerName: string;
@@ -5,5 +9,5 @@ export class RestrictionModel {
     allowAll: boolean;
     groups: string[];
     users: string[];
-    public : boolean;
+    public: boolean;
 }

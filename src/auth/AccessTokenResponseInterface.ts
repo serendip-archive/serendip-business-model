@@ -1,4 +1,6 @@
-
+/**
+ * @module Auth
+ */
 export interface AccessTokenResponseInterface {
 
 

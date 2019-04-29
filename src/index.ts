@@ -1,4 +1,7 @@
 // created from 'create-ts-index'
+/**
+ * @ignore
+ */
 
 export * from "./auth";
 export * from "./business";

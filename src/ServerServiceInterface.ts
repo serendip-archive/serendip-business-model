@@ -1,3 +1,7 @@
+/**
+ * @module Server
+ */
+
 export interface ServerServiceInterface {
   start?(): Promise<any>;
 

@@ -1,4 +1,8 @@
-export class UserModel {
+/**
+ * @module Auth
+ */
+
+ export class UserModel {
   public _id?: string;
 
   public registeredAt?: number;

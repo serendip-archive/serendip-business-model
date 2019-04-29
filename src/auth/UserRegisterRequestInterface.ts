@@ -1,4 +1,8 @@
-export interface UserRegisterRequestInterface {
+/**
+ * @module Auth
+ */
+
+ export interface UserRegisterRequestInterface {
 
     username: string;
     password: string;

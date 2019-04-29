@@ -1,4 +1,8 @@
-export class TokenModel {
+/**
+ * @module Auth
+ */
+
+ export class TokenModel {
   _id?: string;
 
   userId?: string;

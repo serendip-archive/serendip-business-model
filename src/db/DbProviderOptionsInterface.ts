@@ -1,3 +1,7 @@
-export interface DbProviderOptionsInterface {
+/**
+ * @module Db
+ */
+
+ export interface DbProviderOptionsInterface {
   [key: string]: any;
 }

@@ -1,4 +1,8 @@
-import { EntityChangeModel, DbCollectionInterface } from "..";
+/**
+ * @module Db
+ */
+
+ import { EntityChangeModel, DbCollectionInterface } from "..";
 export interface DbProviderInterface {
   /**
    * return db collection as interface

@@ -1,3 +1,6 @@
+/**
+ * @module Business
+ */
 import { BusinessMemberModel } from ".";
 
 export class BusinessModel {
