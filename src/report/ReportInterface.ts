@@ -8,6 +8,6 @@ export interface ReportInterface extends EntityModel {
   fields?: ReportFieldInterface[];
   count?: number;
   data?: any[];
-
+  aggregation?: any[];
   offline?: boolean;
 }

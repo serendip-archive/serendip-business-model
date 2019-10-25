@@ -6,4 +6,5 @@ export interface DashboardSectionInterface {
     icon?: string;
     tabs?: DashboardTabInterface[];
     toggleUl?: boolean;
+    product : string;
   }

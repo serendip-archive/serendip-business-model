@@ -8,7 +8,6 @@
   public registeredAt?: number;
   public registeredByIp?: string;
   public registeredByUseragent?: string;
-
   public username: string;
   public password?: string;
   public passwordSalt?: string;
@@ -19,10 +18,8 @@
   public passwordChangedAt?: number;
   public passwordChangedByIp?: string;
   public passwordChangedByUseragent?: string;
-
   public emailVerificationCode?: string;
   public mobileVerificationCode?: string;
-
   public email?: string;
   public mobile?: string;
 
@@ -38,4 +35,9 @@
   public twoFactorEnabled?: boolean;
   public groups?: string[];
   public extra?: any;
+
+
+  validate(){
+
+  }
 }
